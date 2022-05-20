@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -5,21 +7,31 @@
 
 body {
     background-color: white;
+    font-family:"Noto Sans", sans-serif, Arial;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 
 header {
     background-color: #1d3557;
 }
 
-.logo,
+#logo_link{
+    padding-top: 5px;
+}
+.logo{
+    width: 80px;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 nav a {
     text-align: center;
     color: #acecec;
-    text-decoration: none;
+    text-decoration: none; padding: 35px;
 }
 
 nav a:hover {
@@ -29,6 +41,9 @@ nav a:hover {
 
 .home-title {
     color: #1d3557;
+    font-family: Kalam, "Noto Sans", sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 #hero-img {
@@ -46,6 +61,13 @@ nav a:hover {
 .button-box {
     text-align: center;
 }
+.card-img{
+    border: 10px solid #f4d35e;
+}
+
+h2{
+    margin: 0;
+}
 
 h4 {
     color: black;
@@ -56,6 +78,10 @@ h4 {
     background-color: #acecec;
     color: #1d3557;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,
@@ -71,22 +97,41 @@ h4 {
 
 .msg {
     background-color: #1d3557;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: #acecec;
+    font-family: Kalam, "Noto Sans", sans-serif;
 }
 
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 main section {
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
 footer {
     background-color: #1d3557;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
 
 footer h3 {
