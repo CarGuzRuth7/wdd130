@@ -384,6 +384,137 @@ footer a {
 }
 
 
+/*FAQS-FEEDBACK*/
+#faq-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.faq-img{
+    width: 70%;
+    margin-top: 50px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+}
+.faq-txt{
+    grid-column: 2/5;
+    grid-row: 1/2;
+    margin-top: 50px;
+    margin-left: 20px;
+    
+}
+.questions{
+    grid-column: 1/6;
+    grid-row: 3/9;
+    margin: 40px 40px;
+}
+#background-feedback{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/6;
+    grid-row: 10/14;
+
+}
+.title-msg{
+    font-family: Itim, "Baloo Da 2", "Times News Roman";
+    text-align: center;
+    color: #2A341E;
+    grid-column: 1/6;
+    grid-row: 9/10;
+    margin-top: 100px;
+}
+#form{
+    grid-column: 3/6;
+    grid-row: 11/13;
+    width: 100%;
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: rgb(253, 253, 255, 0.5);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+    padding: 5px;
+    font-size: 0.8em;
+    font-family: Ubuntu, Montserrat, "Open Sans";
+  }
+
+#feedback {
+    background-color: antiquewhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;     
+     
+}
+.moveDown {
+    margin-top: 3em;
+}
+
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 900px) {
@@ -415,7 +546,7 @@ footer a {
     #hero-msg {
         margin-top: 0;
     }
-
+    
     .button-box {
         display: none;
     }
@@ -423,6 +554,9 @@ footer a {
     .home-title {
         font-size: 35px;
         color: #2A341E;
+    }
+    .mate-txt{
+        margin: 20px;
     }
     .title-unity{
         display: block;
@@ -451,6 +585,48 @@ footer a {
     }
 
     footer {
-        margin-top: 25px;
+        margin-top: 80px;
+    }
+
+    /*HOW TO MAKE MATE*/
+
+    #howto-grid{
+        display: block;
+        margin: 100px 20px;
+        text-align: center;
+    }
+    .step1-img, .step2-img, .step3-img, .step4-img, .step5-img, .step6-img, .step7 img{
+        width: 50%;
+        margin:  10% auto;
+        height: auto;
+    }
+    .var-mates{
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    /*FAQS-FEEDBACK*/
+    #faq-grid{ 
+         display: block;
+    }
+    .faq-img{
+        display: block;
+        margin: 20px auto;
+        width: 30%;
+        margin-top: 50px;
+    }
+    .faq-txt{
+        margin: 80px 30px;
+    }    
+    #background-feedback{
+        display: block;
+        width: 90%;
+        margin: 50px auto;
+        border: 5px solid #2A341E;
+    }
+    form{
+        border: none;
+
     }
 }

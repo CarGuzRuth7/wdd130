@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet Your Mate</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header>
-        <a id="logo_link" href="index.html">
+        <a id="logo-link" href="index.html">
             <img class="logo" src="images/Meet_Your_Mate_logo.png" alt="Meet Your Mate logo">
         </a>
         <nav>
@@ -21,14 +22,14 @@
         </nav>
 
     </header>
-    <main>
-        <section>
-            <img src="images/faq.png" alt="https://www.flaticon.com/free-icons/faq">
+    <main id="faq-grid">
+        <img class="faq-img" src="images/faq.png" alt="https://www.flaticon.com/free-icons/faq">
+        <section class="faq-txt">
             <h1 class="title">FAQs</h1>
             <p>If is your first time you hearing about mate, here is were we will attend the most common questions about MATE. </p>
 
         </section>
-        <section>
+        <section class="questions">
             
             <h4 class="title">What is Mate? </h4>
             <p> Mate is called to the infusion but also is how it’s called the cup.</p>
@@ -56,17 +57,15 @@
 
         </section>
 
-        <section>
-            <h1 class="title">Leave Us a Message</h1>
-            <div id="background-feedback">
-                <img src="images/mountains-gb8f62df88_1280.jpg" alt="mate in mountains">
-            </div>
+        
+        <h1 class="title-msg">Leave Us a Message</h1>
+        <img id="background-feedback" src="images/mountains-gb8f62df88_1280.jpg" alt="mate in mountains"> 
+           
+        <div id="form">
+            <div id="feedback"></div>
             
-            <div id="form">
-                <div id="feedback"></div>
-            
-                <form action="/my-handling-form-page" method="post">
-                    <ul>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
                         <li>
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="user_name">
@@ -84,13 +83,13 @@
                             <button type="submit">Send your message</button>
                         </li>
                         
-                    </ul>
-                </form>
+                </ul>
+            </form>
 
-            </div>
+        </div>
 
 
-        </section>
+        
 
 
     </main>
@@ -117,6 +116,7 @@
             feedbackElement.style.display = "block";
             // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
+            
         });
     </script>
 
